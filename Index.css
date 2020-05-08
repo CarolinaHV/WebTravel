@@ -77,6 +77,11 @@ nav ul li a:hover{
 
 }
 .container{
+    background-color:white;
+    margin: 2rem;
+    box-shadow: 0 1rem 1.5rem grey;
+}
+.header{
     width: 100%;
     max-width: 1400px;
     height: 100%;
