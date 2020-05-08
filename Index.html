@@ -4,111 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/829d861ce9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Comic+Neue|Gochi+Hand&&display=swap">
-    <title>WEBSITE TRAVEL</title> 
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;    
-        }
-        .sidebar{
-            position: fixed;
-            width: 18%;
-            max-width: 1000px;
-            height: 100%;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            background:lightseagreen;
-            font-family: 'Baloo Bhaina 2', cursive;
-        }
-        .sidebar header{
-            font-size: 30px;
-            color: white;
-            text-align: center;
-            line-height: 80px;
-            background: darkcyan;
-            user-select: none;
-        }
-        .sidebar ul a{
-            display: block;
-            height: 100%;
-            width: 100%;
-            padding-left: 40px;
-            line-height: 75px;
-            font-size: 20px;
-            color: whitesmoke;
-             box-sizing: border-box;
-            transition: .4s;
-        }
-        ul li:hover a{
-            padding-left: 50px;
-            background:lightsteelblue;       
-            color: blueviolet;     
-        }
-        .sidebar ul a i{
-            margin-right: 18px;
-        }
-        .container{
-            width: 82%;
-            max-width: 1000px;
-            margin-left: 19%;
-            overflow: hidden;
-        }
-        .main header img{
-            width: 100%; 
-            height:auto;
-        }
-        .info{
-            margin: 20px;
-            line-height: 25px;
-            font-size: 16px;
-            box-sizing: border-box;
-        }
-        .container .info p{
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            font-family: 'ABeeZee', sans-serif;
-        }
-        .container .info h2{
-            font-family: 'Gochi Hand', cursive;
-            font-size: 35px;
-            letter-spacing: 3px;
-            margin-block-start: 1em;
-            margin-block-end: 0.5em;
-        }
-        .container-footer{
-                width: 100%;
-                height: 50px;
-                display: block;
-                position: fixed bottom ;
-        }
-    </style>
+    <link rel="stylesheet" href="Index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>WEBSITE TRAVEL</title>  
 </head>
 
 <body>
-    <!--Nav-->
-    <div class="sidebar">
-        <nav>
-        <header>WELCOME</header>
-            <ul>
-                <li><a href="Index.html"><i class="fas fa-passport"></i>Menú</a></li>
-                <li><a href="New_York.html"><i class="fas fa-globe-americas"></i>New York</a></li>
-                <li><a href="Londres.html"><i class="fas fa-globe-europe"></i>London</a></li>
-                <li><a href="Netherlands.html"><i class="fas fa-globe-asia"></i>Netherlands</a></li>
-            </ul>
-        </nav> 
+     <!--Nav-->
+     <div class="btn">
+        <span class="fa fa-bars"></span>
     </div>
+    <nav class="sidebar">
+        <div class="text">WELCOME</div>
+            <ul>
+                <li><a href="Index.html"><i class="fas fa-passport"></i> Menú</a></li>
+                <li><a href="../New_York/New_York.html"><i class="fas fa-globe-americas"></i> New York</a></li>
+                <li><a href="../London/Londres.html"><i class="fas fa-globe-europe"></i> London</a></li>
+                <li><a href="../Netherlands/Netherlands.html"><i class="fas fa-globe-asia"></i> Netherlands</a></li>
+            </ul> 
+    </nav>
      <!-- !PAGE CONTENT! -->  <!-- Header -->
     <div class="container">
-        <div class="main"> 
-            <header >
-                <img class="image" src="./Pics/Travel_the_world.jpg" alt="puzzle">  
-            </header>
+        <div class="header"> 
+                <img class="image" src="./Pics/Travel_the_world.jpg" alt="puzzle"> 
         </div>       
         <div class="info">
             <p>Hello, my names is Carolina and on this page I will show you the places to wich I would like to travel, each side has a characteristic that makes them unique.  Below a small reviw of each one.</p>
@@ -124,5 +42,6 @@
            </i>
         </footer>
     </div> 
+    <script src="Index.js"></script>
 </body>
 </html>

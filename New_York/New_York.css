@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Be+Vietnam|Knewave|Comic+Neue|Chilanka|Gochi+Hand|Gayathri|Kirang+Haerang|Permanent+Marker&display=swap");
+    
+.body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+.btn{
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    background: orangered;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn.click{
+    left: 260px;
+}
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span::before{
+    content: '\f00d';
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: rgb(247, 151, 116);
+    font-family: 'Baloo Bhaina 2', cursive;
+    transition: left 0.4s ease;
+}
+.sidebar.show{
+    left: 0px;
+} 
+.sidebar .text{
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 85px;
+    text-align: center;
+    background: orangered;
+    letter-spacing: 1px;
+}
+nav ul{
+    background:rgb(247, 151, 116);
+    height: 100%;
+    width: 80%;
+    list-style: none;
+}
+nav ul li{
+    position: relative;
+    line-height: 80px;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    transition: .4s;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+nav ul li a:hover{
+    color: violet;
+    background: lightgoldenrodyellow;     
+} 
+.container{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: justify;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+}    
+.container h1, h2{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;    
+}
+.container h3, h4{
+    font-family: 'Permanent Marker', cursive;
+    text-align: left;
+    font-size: 22px;
+    margin: 20px;
+}
+.container p, ul{
+    font-family: 'Be Vietnam', sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    height: auto;
+    word-wrap:break-word;
+}
+.header{
+    display: flex;
+    flex-flow: column nowrap;   
+}
+.header .bar{
+    margin: 0;
+    padding: 2px;
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    font-family: 'Knewave', cursive;
+    overflow: hidden;
+    background-color:darkslateblue;
+}
+.header .bar a{ 
+    flex: 5 5 auto;
+    font-size: 20px;
+    color:floralwhite;
+    text-decoration: none;    
+}
+.header .bar a:hover {
+    color: blueviolet;  
+    background:lightsteelblue; 
+
+}
+
+.header img{
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+/*.header .title h1{
+        font-size: 50px;
+        margin: 10px;
+        color: rgb(236, 236, 22);
+        text-shadow: 3px 2px 5px black;
+}*/
+.section {
+    display: block;
+    width: 100%;
+    max-width: 1050px;
+    height: 100%;
+    margin: auto;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+.section h2{
+        color:rgb(109, 197, 21);
+        font-size: 3em;
+        letter-spacing: 0.5em;
+}
+.article {
+    display: block;
+    word-wrap:break-word; 
+    padding: 5px;
+    margin: 10px; 
+    box-sizing: border-box;
+}
+    .article h2{
+        color:rgb(176, 65, 204);
+        font-size: 3em;
+        letter-spacing: 0.5em;
+    }
+    .article h3{
+        color:rgb(129, 22, 115);
+        letter-spacing: 0.5em;
+    }
+.container-list{
+    margin: 0 auto;
+    padding: 10px;     
+}
+.container-list ul{
+    list-style-type: circle;
+    list-style-position: outside; 
+    column-count: 2; 
+    column-gap: 60px;  
+    column-rule-style: solid;   
+    column-rule-width: 1px;     
+    column-rule-color:mediumpurple;  
+}
+.caja{
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .card{
+        margin: 15px;
+    }
+    .card a{
+        display: inline-block;
+    }
+    .card:hover figure{
+        -webkit-transform: perspective(600px) rotateY(180deg);
+        -ms-transform: perspective(600px) rotateY(180deg);
+        -o-transform: perspective(600px) rotateY(180deg);
+        transform: perspective(600px) rotateY(180deg);
+    } 
+    figure{
+        width: 480px;
+        height: 350px;
+        margin: 0;
+        position: relative;
+        transition: all ease .5s;
+        transform-style: preserve-3d;
+        transform: perspective(600px) rotateY(0deg);
+    }
+    figure .front{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        border-radius: 5px;
+        transition: all ease .5s;
+        display: block;
+    }
+    figure .trasera{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: all ease .5s;
+        position: absolute;
+        top: 0;
+        color:rebeccapurple;
+        transform: perspective(600px) rotateY(180deg);
+        backface-visibility: hidden;
+        overflow: auto;
+        /*estilos gradients de la pagina https://uigradients.com/ */
+        background: #9796f0;
+        background: -webkit-linear-gradient(to right, #9796f0, #fbc7d4); 
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
+    }
+    figure .trasera p {
+        color:midnightblue;
+        font-family: 'Chilanka', cursive;
+        font-weight: normal;
+        font-size: 1.2em;
+        margin: 10px;
+    } 
+    .imagenes h2{
+        color:orangered;
+        font-size: 3em;
+        letter-spacing: 0.5em;
+    }
+    .slider-container{
+        width: 70vw;
+        margin: auto;
+    }
+    .slide{
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+    .slide > img {
+        float: left; 
+        width: 100%;
+        height: auto; 
+        background-size: cover;
+        background-position: center;
+    }
+    .container-footer{
+        width: 100%;
+        height: 50px;
+        display: block;
+        position: fixed bottom ;
+    }

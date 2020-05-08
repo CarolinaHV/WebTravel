@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Comic+Neue|Gochi+Hand|Merriweather+Sans:800i|Montserrat|Montserrat+Alternates:800|Poppins&&display=swap");
+
+.body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+.btn{
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    background: orangered;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn.click{
+    left: 260px;
+}
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span::before{
+    content: '\f00d';
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: rgb(247, 151, 116);
+    font-family: 'Baloo Bhaina 2', cursive;
+    transition: left 0.4s ease;
+}
+.sidebar.show{
+    left: 0px;
+} 
+.sidebar .text{
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 85px;
+    text-align: center;
+    background: orangered;
+    letter-spacing: 1px;
+}
+nav ul{
+    background:rgb(247, 151, 116);
+    height: 100%;
+    width: 80%;
+    list-style: none;
+}
+nav ul li{
+    position: relative;
+    line-height: 80px;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    transition: .4s;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+nav ul li a:hover{
+    color: violet;
+    background: lightgoldenrodyellow;     
+} 
+.logo{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+.logo h1{
+    display: flex;
+}
+.logo h1 span{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: slateblue;
+    text-transform: uppercase;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .1rem;
+    border-radius: 50%;
+    font-family: 'Roboto Mono', monospace;;
+}
+.logo h1 span:nth-child(1){
+    animation: drop-letters 5s .1s infinite;
+}
+.logo h1 span:nth-child(2){
+    animation: drop-letters 5s .2s infinite;
+}
+.logo h1 span:nth-child(3){
+    animation: drop-letters 5s .3s infinite;
+}
+.logo h1 span:nth-child(4){
+    animation: drop-letters 5s .4s infinite;
+}
+.logo h1 span:nth-child(5){
+    animation: drop-letters 5s .5s infinite;
+}
+.logo h1 span:nth-child(6){
+    animation: drop-letters 5s .6s infinite;
+}
+.logo h1 span:nth-child(7){
+    animation: drop-letters 5s .7s infinite;
+}
+.logo h1 span:nth-child(8){
+    animation: drop-letters 5s .8s infinite;
+}
+.logo h1 span:nth-child(9){
+    animation: drop-letters 5s .9s infinite;
+}
+.logo h1 span:nth-child(10){
+    animation: drop-letters 5s 1s infinite;
+}
+.logo h1 span:nth-child(11){
+    animation: drop-letters 5s 1.1s infinite;
+}
+@keyframes drop-letters{
+    0% { transform: translateY(0);}
+    10% { transform: translateY(0);}
+    15% { transform: translateY(-100%);}
+    20% { transform: translateY(0);}
+    100% { transform: translateY(0);}
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: justify;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+}    
+.container h1, h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;    
+    font-size: 35px;
+}
+.container h3, h4{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: left;
+    font-size: 23px;
+    margin: 20px;
+}
+.container p, ul, li{
+    font-family: 'Poppins', sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    height: auto;
+    word-wrap:break-word;
+}
+.header{
+    display: flex;
+    flex-flow: column nowrap;   
+}
+.header .bar{
+    margin: 0;
+    padding: 5px;
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow: hidden;
+    background-color: orangered;
+}
+.header .bar a{ 
+    flex: 5 5 auto;
+    font-size: 20px;
+    color:floralwhite;
+    text-decoration: none;    
+}
+.header .bar a:hover {
+    color: red;  
+    background: lavenderblush;
+}
+.header img{
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    display: block;
+    width: 100%;
+    max-width: 1050px;
+    height: 100%;
+    margin: auto;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+.section h2{
+        color:rgb(109, 197, 21);
+        font-size: 3em;
+        letter-spacing: 0.5em;
+}
+.article {
+    display: block;
+    word-wrap:break-word; 
+    padding: 5px;
+    margin: 10px; 
+    box-sizing: border-box;
+}
+    .article h2{
+        color:rgb(176, 65, 204);
+        font-size: 3em;
+        letter-spacing: 0.3em;
+    }
+    .article h3{
+        color:rgb(129, 22, 115);
+        letter-spacing: 0.2em;
+    }

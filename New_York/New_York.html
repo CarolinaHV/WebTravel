@@ -4,303 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/829d861ce9.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Be+Vietnam|Knewave|Comic+Neue|Chilanka|Gochi+Hand|Gayathri|Kirang+Haerang|Permanent+Marker&display=swap">
-        <title>NEW YORK CITY</title>
-
-        <style>
-
-            .sidebar{
-                position: fixed;
-                width: 18%;
-                max-width: 1100px;
-                height: 100%;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                background:cornflowerblue;
-                font-family: 'Baloo Bhaina 2', cursive;
-            }
-                .sidebar header{
-                    font-size: 30px;
-                    color: white;
-                    text-align: center;
-                    line-height: 80px;
-                    background:darkslateblue;
-                    user-select: none;
-                }
-            .sidebar a{
-                display: block;
-                height: 100%;
-                width: 100%;
-                line-height: 75px;
-                font-size: 20px;
-                color: whitesmoke;
-                padding-left: 40px;
-                box-sizing: border-box;
-                transition: .4s;
-            }
-            .sidebar nav a:hover{
-                padding-left: 50px;
-                background:lightsteelblue;       
-                color: aqua;     
-            }
-            .sidebar a i{
-                margin-right: 18px;
-            }
-            .container{
-                width: 82%;
-                max-width: 1100px;
-                height: 100%;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                margin-left: 18%;
-                text-align: justify;
-                overflow: hidden;
-                display: flex;
-                flex-flow: column nowrap;
-            }    
-            .container h1, h2{
-                font-family: 'Permanent Marker', cursive;
-                text-align: center;    
-            }
-            .container h3, h4{
-                font-family: 'Permanent Marker', cursive;
-                text-align: left;
-                font-size: 22px;
-                margin: 20px;
-            }
-            .container p, ul{
-                font-family: 'Be Vietnam', sans-serif;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                height: auto;
-                word-wrap:break-word;
-            }
-            .header{
-                display: flex;
-                flex-flow: column nowrap;   
-            }
-            .header .bar{
-                margin: 0;
-                padding: 2px;
-                height: 20%;
-                display: flex;
-                flex-flow: row nowrap;
-                text-align: center;
-                font-family: 'Knewave', cursive;
-                overflow: hidden;
-                background-color:darkslateblue;
-            }
-            .header .bar a{ 
-                flex: 5 5 auto;
-                font-size: 20px;
-                color:floralwhite;
-                text-decoration: none;    
-            }
-            .header .bar a:hover {
-                color: blueviolet;  
-                background:lightsteelblue; 
-  
-            }
-
-            .header img{
-                align-content: center;
-                width: 100%;
-                height: auto;
-            }
-            .header .title h1{
-                    font-size: 50px;
-                    margin: 10px;
-                    color: rgb(236, 236, 22);
-                    text-shadow: 3px 2px 5px black;
-            }
-            .section {
-                display: block;
-                width: 100%;
-                max-width: 1050px;
-                height: 100%;
-                margin: auto;
-                line-height: 25px;
-                box-sizing: border-box;
-            }
-            .section h2{
-                    color:rgb(109, 197, 21);
-                    font-size: 3em;
-                    letter-spacing: 0.5em;
-            }
-            .article {
-                display: block;
-                word-wrap:break-word; 
-                padding: 5px;
-                margin: 10px; 
-                box-sizing: border-box;
-            }
-                .article h2{
-                    color:rgb(176, 65, 204);
-                    font-size: 3em;
-                    letter-spacing: 0.5em;
-                }
-                .article h3{
-                    color:rgb(129, 22, 115);
-                    letter-spacing: 0.5em;
-                }
-            .container-list{
-                margin: 0 auto;
-                padding: 10px;     
-            }
-            .container-list ul{
-                list-style-type: circle;
-                list-style-position: outside; 
-                column-count: 2; 
-                column-gap: 60px;  
-                column-rule-style: solid;   
-                column-rule-width: 1px;     
-                column-rule-color:mediumpurple;  
-            }
-            .caja{
-                height: 100%;
-                width: 100%;
-                max-width: 1100px;
-                margin: 50px auto;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-                .card{
-                    margin: 15px;
-                }
-                .card a{
-                    display: inline-block;
-                }
-                .card:hover figure{
-                    -webkit-transform: perspective(600px) rotateY(180deg);
-                    -ms-transform: perspective(600px) rotateY(180deg);
-                    -o-transform: perspective(600px) rotateY(180deg);
-                    transform: perspective(600px) rotateY(180deg);
-                } 
-                figure{
-                    width: 480px;
-                    height: 350px;
-                    margin: 0;
-                    position: relative;
-                    transition: all ease .5s;
-                    transform-style: preserve-3d;
-                    transform: perspective(600px) rotateY(0deg);
-                }
-                figure .front{
-                    width: 100%;
-                    height: 100%;
-                    background-position: center;
-                    border-radius: 5px;
-                    transition: all ease .5s;
-                    display: block;
-                }
-                figure .trasera{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    transition: all ease .5s;
-                    position: absolute;
-                    top: 0;
-                    color:rebeccapurple;
-                    transform: perspective(600px) rotateY(180deg);
-                    backface-visibility: hidden;
-                    overflow: auto;
-                    /*estilos gradients de la pagina https://uigradients.com/ */
-                    background: #9796f0; /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #9796f0, #fbc7d4); 
-                background: linear-gradient(to right, #9796f0, #fbc7d4);
-                }
-                figure .trasera p {
-                    color:midnightblue;
-                    font-family: 'Chilanka', cursive;
-                    font-weight: normal;
-                    font-size: 1.2em;
-                    margin: 10px;
-                } 
-                .imagenes h2{
-                    color:orangered;
-                    font-size: 3em;
-                    letter-spacing: 0.5em;
-                }
-                .slider{
-                    flex-direction: row;
-                    display: block;
-                    overflow: hidden;
-                    margin: 30px;
-                } 
-                .slider > figure{
-                    position: relative;
-                    width:1000%;
-                    margin: 0;
-                    left: 0;
-                    animation: slider 30s linear 5s infinite;
-                }   
-                .slider > figure > img {
-                    float: left; 
-                    width: 10%;
-                    height: auto; 
-                    display: flex;
-                    background-size: cover;
-                    background-position: center;
-                }
-                @keyframes slider{
-
-                    0%{left: 0;}
-                    10%{left: 0;}
-
-                    15%{left: -100%;}
-                    20%{left: -200%;}
-
-                    25%{left: -200%;}
-                    30%{left: -300%;}
-
-                    35%{left: -300%;}
-                    40%{left: -400%;}
-
-                    45%{left: -400%;}
-                    50%{left: -500%;}
-
-                    55%{left: -500%;}
-                    60%{left: -600%;}
-
-                    65%{left: -600%;}
-                    70%{left: -700%;}
-
-                    75%{left: -700%;}
-                    80%{left: -800%;}
-
-                    85%{left: -800%;}
-                    90%{left: -900%;}
-
-                    95%{left: -900%;}
-                    100%{left: -1000%;}     
-                }
-            .container-footer{
-                width: 100%;
-                height: 50px;
-                display: block;
-                position: fixed bottom ;
-            }
-        </style>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="./New_York.css"> 
     </head>
 
     <body>
-        <div class="sidebar">
-            <nav>
-                <header>WELCOME</header>
-                <a href="Index.html"><i class="fas fa-passport"></i>Menú</a>
-                <a href="New_York.html"><i class="fas fa-globe-americas"></i>New York</a>
-                <a href="Londres.html"><i class="fas fa-globe-europe"></i>London</a>
-                <a href="Netherlands.html"><i class="fas fa-globe-asia"></i>Netherlands</a>
-            </nav> 
+         <!--Nav-->
+         <div class="btn">
+            <span class="fa fa-bars"></span>
         </div>
+        <nav class="sidebar">
+            <div class="text">WELCOME</div>
+                <ul>
+                    <li><a href="../Index.html"><i class="fas fa-passport"></i> Menú</a></li>
+                    <li><a href="../New_York/New_York.html"><i class="fas fa-globe-americas"></i> New York</a></li>
+                    <li><a href="../London/Londres.html"><i class="fas fa-globe-europe"></i> London</a></li>
+                    <li><a href="../Netherlands/Netherlands.html"><i class="fas fa-globe-asia"></i> Netherlands</a></li>
+                </ul> 
+        </nav>
         <div class="container">
             <header class="header">
-                <div class="title"><h1>A TRAVEL AROUND NEW YORK CITY</h1></div>
-                    <img src="./NewYork/skyline.jpg" alt="New York in the Nigth">
+               <!-- <div class="title"><h1>A TRAVEL AROUND NEW YORK CITY</h1></div> --> 
+                    <img src="../New_York/ImgNY/skyline.jpg" alt="New York in the Nigth">
                 <div class="bar">
                     <a href="#HISTORY" > HISTORY</a>
                     <a href="#PLACES"> TOURIST PLACES</a>
@@ -444,7 +169,7 @@
                         <div class="card">
                             <a href="https://www.manhattarestaurant.com/">
                             <figure>
-                                <img src="./NewYork/card-manhatta.jpg" class="front" title="Manhatta Restaurant" alt="Manhatta Restaurant">
+                                <img src="../New_York/ImgNY/card-manhatta.jpg" class="front" title="Manhatta Restaurant" alt="Manhatta Restaurant">
                                 <figcaption class="trasera">
                                 <h3> Manhatta Restaurant</h3>
                             
@@ -457,21 +182,20 @@
                         </div>    
                         <div class="card">
                             <a href="https://www.nutella.com/us/en/nutella-cafe-new-york">
-                            <figure>
-                                <img src="./NewYork/Nutella-Cafe-in-NYC.jpg" class="front" title="Nutella-Cafe-in-NYC" alt="Nutella-Cafe">
-                                <figcaption class="trasera">
-                                <h3> Nutella Cafe</h3>
-                            
-                                <hr>
-                                <p>As you get to the joint you run into 2 guys making pancakes nonstop, a giant liquid nutella platter, and shelves full of giant jars, cookies, and nutella sweets. Prices are around $ 5 for crepes, ice creams or coffees. And from $ 2 -4 $ for nutela cupcakes, of course!.</p>
-                                </figcaption>
-                            </figure>
-                        </a>
+                                <figure>
+                                    <img src="../New_York/ImgNY/Nutella-Cafe-in-NYC.jpg" class="front" title="Nutella-Cafe-in-NYC" alt="Nutella-Cafe">
+                                    <figcaption class="trasera">
+                                        <h3> Nutella Cafe</h3>
+                                        <hr>
+                                        <p>As you get to the joint you run into 2 guys making pancakes nonstop, a giant liquid nutella platter, and shelves full of giant jars, cookies, and nutella sweets. Prices are around $ 5 for crepes, ice creams or coffees. And from $ 2 -4 $ for nutela cupcakes, of course!.</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div> 
                         <div class="card">
                             <a href="https://www.shakeshack.com/">
                                 <figure>
-                                    <img src="./NewYork/shakeshack.jpg" class="front" title="Manhatta Restaurant" alt="Manhatta Restaurant">
+                                    <img src="../New_York/ImgNY/shakeshack.jpg" class="front" title="Manhatta Restaurant" alt="Manhatta Restaurant">
                                     <figcaption class="trasera">
                                     <h3> Shake shack</h3>
                                     <hr>
@@ -483,7 +207,7 @@
                         <div class="card">
                             <a href="http://www.ferraranyc.com/">
                                 <figure>
-                                    <img src="./NewYork/ferrara2.jpg" class="front" title="Ferrara Bakery" alt="Ferrara Bakery">
+                                    <img src="../New_York/ImgNY/ferrara2.jpg" class="front" title="Ferrara Bakery" alt="Ferrara Bakery">
                                     <figcaption class="trasera">
                                     <h3> Ferrara Bakery</h3>
                                     <hr>
@@ -495,7 +219,7 @@
                         <div class="card">
                             <a href="https://maxbrenner.com/locations/usa/restaurant-nyc/">
                                 <figure>
-                                    <img src="./NewYork/Max-Brenner-NYC.jpg" class="front" title="Max Brenner" alt="Max Brenner">
+                                    <img src="../New_York/ImgNY/Max-Brenner-NYC.jpg" class="front" title="Max Brenner" alt="Max Brenner">
                                     <figcaption class="trasera">
                                     <h3> Max Brenner</h3>
                                     <hr>
@@ -507,7 +231,7 @@
                         <div class="card">
                             <a href="http://jgmelonnyc.com/">
                                 <figure>
-                                    <img src="./NewYork/jgmelon.jpg" class="front" title="JG Melon" alt="JG Melon">
+                                    <img src="../New_York/ImgNY/jgmelon.jpg" class="front" title="JG Melon" alt="JG Melon">
                                     <figcaption class="trasera">
                                     <h3> JG Melon</h3>
                                     <hr>
@@ -521,7 +245,7 @@
                         <div class="card">
                             <a href="http://rizzosfinepizza.com/">
                                 <figure>
-                                    <img src="./NewYork/rizzospizza.jpg" class="front" title="Rizzo´s Pizza" alt="Rizzo´s Pizza">
+                                    <img src="../New_York/ImgNY/rizzospizza.jpg" class="front" title="Rizzo´s Pizza" alt="Rizzo´s Pizza">
                                     <figcaption class="trasera">
                                     <h3> Rizzo´s Pizza</h3>
                                     <hr>
@@ -534,7 +258,7 @@
                         <div class="card">
                             <a href="https://www.eataly.com/us_en/stores/nyc-flatiron/serra-by-birreria/">
                             <figure>
-                                <img src="./NewYork/birreria5.jpg" class="front" title="La Birreria" alt="La Birreria">
+                                <img src="../New_York/ImgNY/birreria5.jpg" class="front" title="La Birreria" alt="La Birreria">
                                 <figcaption class="trasera">
                                     <h3>La Birreria</h3>
                                     <hr>
@@ -548,7 +272,7 @@
                         <div class="card">
                             <a href="https://clintonstreetbaking.com/">
                             <figure>
-                                <img src="./NewYork/clintonBaking.jpg" class="front" itle="clintonBaking Food" alt="clintonBaking ">
+                                <img src="../New_York/ImgNY/clintonBaking.jpg" class="front" itle="clintonBaking Food" alt="clintonBaking ">
                                 <figcaption class="trasera">
                                     <h3>Clinton St Baking Co.</h3>
                                     <hr>
@@ -594,29 +318,20 @@
                     <h3>Harlem and Central Park</h3>
                     <p>This is an alternative plan to explore the Harlem neighborhood and witness a Gospel Mass, this plan is for a Sunday so also an ideal plan is to go for brunch before leaving the multicultural neighborhood and spending the afternoon in Central Park, exploring the park. New York's most famous and knowing its two star Museums: the MET and the Museum of Natural History. If visiting Harlem doesn't motivate you much, you can go to spend the morning at Coney Island</p><br>
                 </article> 
-                 <div class="imagenes">
-                <h2 id="PICS">PICTURES</h2>
-
-                    <div class="slider">
-                        <figure>
-                            <img src="./NewYork/Times-Square-New-York-City.jpg" alt="New York in the Nigth">
-                            <img src="./NewYork/Central_Park.jpg" alt="Central Park">
-                            <img src="./NewYork/estatua-de-la-libertad.jpg" alt="Statue of Liberty">
-                            <img src="./NewYork/bridg.jpg" alt="Brookling Bridg">
-                            <img src="./NewYork/Rockefeller-center-.jpg" alt="cerveceria">
-                            <img src="./NewYork/puente.jpg" alt="restaurante">
-                            <img src="./NewYork/ny.jpg" alt="Central Park">
-                            <img src="./NewYork/MET.jpg" alt="Statue of Liberty">
-                            <img src="./NewYork/broolyn.jpg" alt="cerveceria">
-                            <img src="./NewYork/911memorial.jpg" alt="restaurante">
-                        </figure> 
+                <div class="imagenes">
+                    <h2 id="PICS">PICTURES</h2>
+                    <div class="slider-container">
+                        <div class="slide">
+                            <img name="imagenesNY">
+                        </div>
                     </div>
-                 </div>    
+                </div>    
             </section> 
             <footer class="container-footer">
                     <h3><i class="far fa-address-card"></i>  By Carolina Hernandez Viveros</h3>
                    </i>
             </footer>
-        </div>     
+        </div>    
+        <script src="../New_York/New_York.js"></script>
     </body>
 </html>
