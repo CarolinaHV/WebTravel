@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Comic+Neue|Gochi+Hand|Montserrat|Montserrat+Alternates:800&&display=swap");
 
-.body{
-    margin: 0;
-    padding: 0;
-    user-select: none;
+*{
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
+    outline: none;
 }
 .btn{
     position: absolute;
@@ -12,7 +12,7 @@
     left: 45px;
     height: 45px;
     width: 45px;
-    background: darkslateblue;
+    background: rgb(98, 187, 190);
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
@@ -34,7 +34,7 @@
     width: 250px;
     height: 100%;
     left: -250px;
-    background:cornflowerblue;
+    background:rgb(90, 207, 211);
     font-family: 'Baloo Bhaina 2', cursive;
     transition: left 0.4s ease;
 }
@@ -43,53 +43,94 @@
 } 
 .sidebar .text{
     color: white;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 6.5rem;
     text-align: center;
-    background:darkslateblue;
-    letter-spacing: 1px;
+    background:rgb(98, 187, 190);
+    letter-spacing: .3rem;
 }
 nav ul{
-    background:cornflowerblue;
+    background:rgb(90, 207, 211);
     height: 100%;
-    width: 80%;
+    width: 100%;
     list-style: none;
 }
 nav ul li{
     position: relative;
-    line-height: 80px;
+    line-height: 90px;
 }
 nav ul li a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.4rem;
     font-weight: 500;
     display: block;
     width: 100%;
-    border-left: 3px solid transparent;
+    border-left: 1px transparent;
     transition: .4s;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 nav ul li a:hover{
-    color: aqua;
-    background:lightsteelblue;     
+    color: royalblue;
+    background: lavender;
+    opacity: .6;
 } 
 .container{
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    text-align: justify;
-    overflow: hidden;
+    background-color:white;
+    margin: 2rem;
+    box-shadow: 0 1rem 1.5rem grey;
+}  
+.logo{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+.logo > h1{
     display: flex;
-    flex-flow: column nowrap;
-}    
+}
+.logo > h1 > span{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: slateblue;
+    text-transform: uppercase;
+    background-color: white;
+    width: 2.3rem;
+    height: 2rem;
+    margin: .1rem;
+    border-radius: 50%;
+    font-family: 'Roboto Mono', monospace;;
+}
+.logo h1 span:nth-child(1){
+    animation: drop-letters 5s .1s infinite;
+}
+.logo h1 span:nth-child(2){
+    animation: drop-letters 5s .2s infinite;
+}
+.logo h1 span:nth-child(3){
+    animation: drop-letters 5s .3s infinite;
+}
+.logo h1 span:nth-child(4){
+    animation: drop-letters 5s .4s infinite;
+}
+.logo h1 span:nth-child(5){
+    animation: drop-letters 5s .5s infinite;
+}
+.logo h1 span:nth-child(6){
+    animation: drop-letters 5s .6s infinite;
+}
+
+@keyframes drop-letters{
+    0% { transform: translateY(0);}
+    10% { transform: translateY(0);}
+    15% { transform: translateY(-100%);}
+    20% { transform: translateY(0);}
+    100% { transform: translateY(0);}
+}  
 .container h1, h2{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;    
+    padding: 2rem;
 }
 .container h3, h4{
     font-family: 'Montserrat Alternates', sans-serif;
@@ -97,7 +138,7 @@ nav ul li a:hover{
     font-size: 22px;
     margin: 20px;
 }
-.container p, ul, li{
+.container p, ul, ol{
     font-family: 'Montserrat', sans-serif;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -105,8 +146,8 @@ nav ul li a:hover{
     word-wrap:break-word;
 }
 .header{
-    display: flex;
-    flex-flow: column nowrap;   
+    width: 100%;
+    height: 100%;    
 }
 .header .bar{
     margin: 0;
@@ -117,22 +158,22 @@ nav ul li a:hover{
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
     overflow: hidden;
-    background-color:darkslateblue;
+    background-color:rgb(98, 187, 190);
 }
 .header .bar a{ 
     flex: 5 5 auto;
-    font-size: 20px;
+    font-size: 1.3rem;
     color:floralwhite;
     text-decoration: none;    
 }
 .header .bar a:hover {
-    color: blueviolet;  
-    background:lightsteelblue;
+    color: rgb(6, 61, 6);  
+    background: lightsteelblue;
 }
 .header img{
     align-content: center;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .section {
     display: block;
@@ -167,6 +208,7 @@ nav ul li a:hover{
     .slider-container{
         width: 70vw;
         margin: auto;
+        padding-bottom: 5rem;
     }
     .slide{
         display: flex;
@@ -176,7 +218,29 @@ nav ul li a:hover{
     .slide > img {
         float: left; 
         width: 100%;
-        height: auto; 
+        height: 100%; 
         background-size: cover;
         background-position: center;
+    }
+    .footer{
+        background-color: rgb(90, 207, 211);
+        padding: 3rem 0 2rem 0;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+    .link{
+        font-size: 1.7rem;
+        color: floralwhite;
+        margin: 0.2rem;
+        background-color: rgb(90, 207, 211);
+        padding: 0.3rem 1rem;
+        letter-spacing: 0.3rem;
+        transition: all .2s;
+    }
+    .link:hover{
+        transform: rotate(10deg);
+        box-shadow: 0 0.5rem 1.5rem black;
     }
