@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Comic+Neue|Gochi+Hand|Merriweather+Sans:800i|Montserrat|Montserrat+Alternates:800|Poppins&&display=swap");
 
-.body{
-    margin: 0;
-    padding: 0;
-    user-select: none;
+*{
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
+    outline: none;
 }
 .btn{
     position: absolute;
@@ -43,42 +43,43 @@
 } 
 .sidebar .text{
     color: white;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 6.5rem;
     text-align: center;
     background: orangered;
-    letter-spacing: 1px;
+    letter-spacing: .3rem;
 }
 nav ul{
     background:rgb(247, 151, 116);
     height: 100%;
-    width: 80%;
+    width: 100%;
     list-style: none;
 }
 nav ul li{
     position: relative;
-    line-height: 80px;
+    line-height: 90px;
 }
 nav ul li a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 500;
     display: block;
     width: 100%;
-    border-left: 3px solid transparent;
+    border-left: 1px transparent;
     transition: .4s;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 nav ul li a:hover{
-    color: violet;
-    background: lightgoldenrodyellow;     
+    color: red;
+    background: lavenderblush;   
+    opacity: .6;  
 } 
 .logo{
     position: absolute;
     top: 1rem;
-    right: 2rem;
+    right: 3rem;
 }
 .logo h1{
     display: flex;
@@ -89,8 +90,8 @@ nav ul li a:hover{
     color: slateblue;
     text-transform: uppercase;
     background-color: white;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.3rem;
+    height: 2rem;
     margin: .1rem;
     border-radius: 50%;
     font-family: 'Roboto Mono', monospace;;
@@ -122,7 +123,7 @@ nav ul li a:hover{
 .logo h1 span:nth-child(9){
     animation: drop-letters 5s .9s infinite;
 }
-.logo h1 span:nth-child(10){
+.logo h1 span:nth-child(10){ 
     animation: drop-letters 5s 1s infinite;
 }
 .logo h1 span:nth-child(11){
@@ -136,18 +137,11 @@ nav ul li a:hover{
     100% { transform: translateY(0);}
 }
 .container{
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    text-align: justify;
-    overflow: hidden;
-    display: flex;
-    flex-flow: column nowrap;
+    background-color:white;
+    margin: 2rem;
+    box-shadow: 0 1rem 1.5rem grey;
 }    
-.container h1, h2{
+.container h1{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;    
     font-size: 35px;
@@ -158,7 +152,7 @@ nav ul li a:hover{
     font-size: 23px;
     margin: 20px;
 }
-.container p, ul, li{
+.container p, ul{
     font-family: 'Poppins', sans-serif;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -206,9 +200,11 @@ nav ul li a:hover{
     box-sizing: border-box;
 }
 .section h2{
-        color:rgb(109, 197, 21);
-        font-size: 3em;
-        letter-spacing: 0.5em;
+    color:darkorange;
+    font-size: 3rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;    
+    letter-spacing: 0.5em;
 }
 .article {
     display: block;
@@ -218,11 +214,50 @@ nav ul li a:hover{
     box-sizing: border-box;
 }
     .article h2{
-        color:rgb(176, 65, 204);
+        color: darkorange;
         font-size: 3em;
         letter-spacing: 0.3em;
     }
     .article h3{
         color:rgb(129, 22, 115);
         letter-spacing: 0.2em;
+    }
+    .slider-container{
+        width: 70vw;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
+    .slide{
+        display: flex;
+        width: 100%;
+        height: 550px;
+    }
+    .slide > img {
+        float: left; 
+        width: 100%;
+        height: 100%; 
+        background-size: cover;
+        background-position: center;
+    }
+.footer{
+    background-color: orangered;
+    padding: 3rem 0 2rem 0;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+    .link{
+        font-size: 1.5rem;
+        color: floralwhite;
+        margin: 0.2rem;
+        background-color: orangered;
+        padding: 0.3rem 1rem;
+        letter-spacing: 0.3rem;
+        transition: all .2s;
+    }
+    .link:hover{
+        transform: rotate(-10deg);
+        box-shadow: 0 0.5rem 1.5rem silver;
     }
