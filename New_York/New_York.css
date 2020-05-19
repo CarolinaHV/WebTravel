@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee|Baloo+Bhaina+2:600|Be+Vietnam|Knewave|Comic+Neue|Chilanka|Gochi+Hand|Gayathri|Kirang+Haerang|Permanent+Marker&display=swap");
     
-.body{
-    margin: 0;
-    padding: 0;
-    user-select: none;
+*{
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
+    outline: none;
 }
+/* NAV SIDEBAR */
 .btn{
     position: absolute;
     top: 15px;
     left: 45px;
     height: 45px;
     width: 45px;
-    background: orangered;
+    background: darkslateblue;
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
@@ -34,59 +35,106 @@
     width: 250px;
     height: 100%;
     left: -250px;
-    background: rgb(247, 151, 116);
+    background: rgb(130, 118, 207);
     font-family: 'Baloo Bhaina 2', cursive;
     transition: left 0.4s ease;
 }
 .sidebar.show{
     left: 0px;
 } 
-.sidebar .text{
+.sidebar .text{ 
     color: white;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 600;
-    line-height: 85px;
+    line-height: 6.5rem;
     text-align: center;
-    background: orangered;
-    letter-spacing: 1px;
+    background: darkslateblue;
+    letter-spacing: .3rem;
 }
 nav ul{
-    background:rgb(247, 151, 116);
+    background: rgb(130, 118, 207);
     height: 100%;
-    width: 80%;
+    width: 100%;
     list-style: none;
 }
 nav ul li{
     position: relative;
-    line-height: 80px;
+    line-height: 90px;
 }
 nav ul li a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 500;
     display: block;
     width: 100%;
-    border-left: 3px solid transparent;
+    border-left: 1px transparent;
     transition: .4s;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 nav ul li a:hover{
-    color: violet;
-    background: lightgoldenrodyellow;     
+    color: purple;
+    background: lavender;   
+    opacity: .6;  
 } 
+/* CIRCULES */
 .container{
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    text-align: justify;
-    overflow: hidden;
+    background-color:white;
+    margin: 2rem;
+    box-shadow: 0 1rem 1.5rem grey;
+}
+.logo{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+.logo h1{
     display: flex;
-    flex-flow: column nowrap;
-}    
+}
+.logo h1 span{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: slateblue;
+    text-transform: uppercase;
+    background-color: white;
+    width: 2.3rem;
+    height: 2rem;
+    margin: .1rem;
+    border-radius: 40%;
+    font-family: 'Roboto Mono', monospace;;
+}
+.logo h1 span:nth-child(1){
+    animation: drop-letters 5s .1s infinite;
+}
+.logo h1 span:nth-child(2){
+    animation: drop-letters 5s .2s infinite;
+}
+.logo h1 span:nth-child(3){
+    animation: drop-letters 5s .3s infinite;
+}
+.logo h1 span:nth-child(4){
+    animation: drop-letters 5s .4s infinite;
+}
+.logo h1 span:nth-child(5){
+    animation: drop-letters 5s .5s infinite;
+}
+.logo h1 span:nth-child(6){
+    animation: drop-letters 5s .6s infinite;
+}
+.logo h1 span:nth-child(7){
+    animation: drop-letters 5s .7s infinite;
+}
+.logo h1 span:nth-child(8){
+    animation: drop-letters 5s .8s infinite;
+}
+
+@keyframes drop-letters{
+    0% { transform: translateY(0);}
+    10% { transform: translateY(0);}
+    15% { transform: translateY(-100%);}
+    20% { transform: translateY(0);}
+    100% { transform: translateY(0);}
+}
 .container h1, h2{
     font-family: 'Permanent Marker', cursive;
     text-align: center;    
@@ -105,8 +153,8 @@ nav ul li a:hover{
     word-wrap:break-word;
 }
 .header{
-    display: flex;
-    flex-flow: column nowrap;   
+    width: 100%;
+    height: 100%;  
 }
 .header .bar{
     margin: 0;
@@ -134,14 +182,9 @@ nav ul li a:hover{
 .header img{
     align-content: center;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
-/*.header .title h1{
-        font-size: 50px;
-        margin: 10px;
-        color: rgb(236, 236, 22);
-        text-shadow: 3px 2px 5px black;
-}*/
+
 .section {
     display: block;
     width: 100%;
@@ -185,6 +228,7 @@ nav ul li a:hover{
     column-rule-width: 1px;     
     column-rule-color:mediumpurple;  
 }
+/* CARDS */
 .caja{
     height: 100%;
     width: 100%;
@@ -236,17 +280,18 @@ nav ul li a:hover{
         backface-visibility: hidden;
         overflow: auto;
         /*estilos gradients de la pagina https://uigradients.com/ */
-        background: #9796f0;
-        background: -webkit-linear-gradient(to right, #9796f0, #fbc7d4); 
-    background: linear-gradient(to right, #9796f0, #fbc7d4);
+        background: #d3cce3;;
+        background: -webkit-linear-gradient(to right, #d3cce3, #f3eff8); 
+        background: linear-gradient(to right, #d3cce3, #f3eff8);
     }
     figure .trasera p {
         color:midnightblue;
         font-family: 'Chilanka', cursive;
         font-weight: normal;
         font-size: 1.2em;
-        margin: 10px;
+        margin: 1.7rem;
     } 
+    /* SLIDER */
     .imagenes h2{
         color:orangered;
         font-size: 3em;
@@ -255,22 +300,40 @@ nav ul li a:hover{
     .slider-container{
         width: 70vw;
         margin: auto;
+        padding-bottom: 5rem;
     }
     .slide{
         display: flex;
         width: 100%;
-        height: 500px;
+        height: 550px;
     }
     .slide > img {
         float: left; 
         width: 100%;
-        height: auto; 
+        height: 100%; 
         background-size: cover;
         background-position: center;
     }
-    .container-footer{
-        width: 100%;
-        height: 50px;
-        display: block;
-        position: fixed bottom ;
+    /* FOOTER */
+    .footer{
+        background-color: darkslateblue;
+        padding: 3rem 0 2rem 0;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        font-family: 'Kanit', sans-serif;
+    }
+    .link{
+        font-size: 2rem;
+        color: floralwhite;
+        margin: 0.2rem;
+        background-color: darkslateblue;
+        padding: 0.3rem 1rem;
+        letter-spacing: 0.3rem;
+        transition: all .2s;
+    }
+    .link:hover{
+        transform: rotate(-10deg);
+        box-shadow: 0 0.5rem 1.5rem silver;
     }
